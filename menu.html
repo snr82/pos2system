@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>menu</title> 
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Menu -->
+
+        <ol>
+            <h3> Prices are shown below. Click finalize order button once you're sure with your orders.</h3>
+            <li>
+                Burger - 60pesos
+            </li>
+            <li>
+                Fries - 50 pesos
+            </li>
+            <li>
+                Fishbol - 20 pesos
+            </li>
+            <li>
+                Kikiam - 25 pesos
+            </li>
+
+            <button type="button" id="addItem"> Add a  food item </button>
+
+            <form>
+                <label for="foods">
+                    Choice:
+                </label>
+                <select id="foods" name="foods">
+                    <option value="Burger">Burger</option>
+                    <option value="Fries">Fries</option>
+                    <option value="Fishbol">Fishbol</option>
+                    <option value="Kikiam">Kikiam</option>
+                </select>
+
+                <label for="quantity">
+                    Quantity:
+                </label>
+                <input type="number" id="quantity" min="1" max="9">
+                <button type="button" id="finalize">Finalize Order</button>
+                <label for="cash">
+                    Cash:
+                </label>
+                <input type="number" id="cash">
+            </form>
+        </ol>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
